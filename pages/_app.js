@@ -9,6 +9,7 @@ import '@fontsource/inter/400.css';
 import '@fontsource/inter/600.css';
 
 const Intl = ({ children }) => {
+  
   const { locale, messages } = useLocale();
 
   const Wrapper = ({ children }) => <span className={locale}>{children}</span>;
