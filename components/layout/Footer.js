@@ -19,14 +19,13 @@ export default function Footer() {
           values={{
             name: (
               <Link href={HOMEPAGE_URL}>
-                <b>umami</b>
+                <b>DL</b>
               </Link>
             ),
           }}
         />
       </div>
       <div className={classNames(styles.version, 'col-12 col-md-4')}>
-        <Link href={REPO_URL}>{`v${CURRENT_VERSION}`}</Link>
       </div>
       {!pathname.includes('/share/') && <Script src={`/telemetry.js`} />}
     </footer>
